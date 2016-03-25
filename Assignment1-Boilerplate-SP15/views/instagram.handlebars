@@ -1,0 +1,23 @@
+    <body background="images/backgroundInsta.jpg">
+    <div class="container">
+    <h1>Instagram Fact About You</h1>
+    <br>
+    <p style="font-size:120%"> <b>ID</b>: {{user.id}}</p>
+    <p style="font-size:120%"> <b>Username</b>: {{user.username}}</p>
+    <p style="font-size:120%"> <b>Name</b>: {{user.displayName}}</p>
+
+    <h3>You are currently checking out photos you recently liked</h3>
+    <div class="row">
+        {{#each photos}}
+          <div class="col-xs-4" class="images" style="text-align:center">
+            <img src="{{url}}" class="img-responsive"><br>
+            <h5>{{caption}}</h5>
+            <br>
+          </div>
+        {{/each}}
+      </div>
+  </div>
+  <br>
+  <h3 style="text-indent: 5em;color:#FF9900">
+
+<a href="href="http://instagram.com/accounts/logout/">Log out</a>

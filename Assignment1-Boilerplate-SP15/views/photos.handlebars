@@ -1,0 +1,16 @@
+
+
+
+        <div class="container">
+        <h3>You are currently checking out #{{hashtagValue}}</h3>
+        <div class="row">
+            {{#each photos}}
+              <div class="col-xs-4" class="images" style="text-align:center">
+                <img src="{{url}}" class="img-responsive" class="img hashtag-img"><br>
+                <button type="Like" class="btn btn-info">Like</button>
+                <br><br>
+              </div>
+            {{/each}}
+          </div>
+      </div>
+      <br>
