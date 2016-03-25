@@ -1,0 +1,43 @@
+<!-- Nav Bar -->
+<nav class="navbar navbar-app navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/igaccount" class="active">To D3 Or Not To D3<span class="sr-only">(current)</span></a>
+      </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/c3visualization">Popularity of Followers (C3)</a></li>
+        <li><a href="/visualization">Photo Count of Followers (D3)</a></li>
+        <li><a href="/d3visualization">Photos by You (New D3)</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" action="/logout" method="GET">
+        <input type="submit" class="btn btn-login nav-btn" value="Log Out">
+      </form> 
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="page-header center-block">
+    <h1>Popularity versus Number of Photos</h1>
+    <h3><small>of Your Instagram Followers - C3JS</small></h3>
+
+</div>
+<div id="chart"></div>
+
+{{#each user_info}}
+<img class="img-responsive img-circle center-block" src="{{user_info.profile_picture}}">
+{{/each}}
+
+<button class="btn btn-lg btn-default modal btn-cstm" disabled="disabled"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> Loading...</button>
+<!--<div class="modal"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span></div>-->
+<script src="js/c3visualization.js"></script>

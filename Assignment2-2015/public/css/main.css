@@ -1,0 +1,119 @@
+/* CSS FILE FOR CUSTOM GLOBAL STYLING CLASSES */
+/*
+.navbar-fixed-top {
+    height: 70px;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 70px;
+}
+
+.navbar-brand {
+	font-size: 1.5em;
+}
+
+.navbar-form > .nav-btn, .navbar-right {
+	
+	line-height: 30px;
+}
+*/
+
+.navbar-app {
+	background-color: white;
+	opacity: 0.95;
+	box-shadow: 0 0.5px 1px gray;
+
+}
+
+.navbar-app a {
+	color: #333333;
+	font-weight: 200;
+	border-bottom: none;
+}
+
+.navbar-app .active {
+	background-color: #D8F0FF;
+}
+
+.btn-logout {
+	background-color: #FF9CBD;
+	color: #333333;
+	font-weight: 200;
+}
+
+body, html {
+	background-color: #D8F0FF;
+}
+
+body .jumbotron {
+	background-color: #D8F0FF;
+}
+
+.btn {
+	border-style: none;
+}
+
+.btn-login {
+	background-color: #74C7FD;
+	color: white;
+}
+
+.btn-login:hover {
+	background-color: #a2DAFF;
+	color: white;
+}
+.text-lightest {
+	font-weight: 100;
+}
+
+.text-light {
+	font-weight: lighter;
+}
+
+* {
+	color: #333333;
+	font-weight: 200;
+}
+
+body {
+	padding-top: 35px;
+}
+
+.btn-cstm {
+	opacity: 0.7;
+	background-color: gray;
+}
+
+.modal{
+	display: none;
+	
+	position: fixed;
+	z-index: 1000;
+
+	
+	/*background: url('test.svg')
+				no-repeat;*/
+	background-position: center;
+}
+
+
+.modal.loading {
+	display: block;
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}

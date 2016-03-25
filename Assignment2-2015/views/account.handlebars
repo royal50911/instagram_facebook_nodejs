@@ -1,0 +1,23 @@
+<head>
+<link rel="stylesheet" type="text/css" href="css/account.css">
+</head>
+
+<div class="container">
+	<div class="page-header center-block">
+		<h1>Hello, @{{user.name}}!</h1>
+		<h2>{{req.user.provider}}</h2> <!-- NOT WORKING -->
+		<img class="img-responsive img-circle center-block" src="{{user_info.profile_picture}}">
+	</div>
+
+	<h3>Profile statics</h3>
+	<p><strong>ID:</strong> {{user.id}}</p>
+	<p><strong>Name: </strong>{{user.name}}</p>
+	<p><strong>Instagram ID: </strong>{{user.ig_id}}</p>
+	<h3>New Stats!</h3>
+	<p><strong>Full Name: </strong>{{user_info.full_name}}</p>
+	<h4>Number of:</h4>
+	<p><strong>Uploaded Pics: </strong>{{user_info.counts.media}}</p>
+	<p><strong>Followers: </strong>{{user_info.counts.followed_by}}</p>
+	<p><strong>Follows: </strong>{{user_info.counts.follows}}</p>
+
+</div>
